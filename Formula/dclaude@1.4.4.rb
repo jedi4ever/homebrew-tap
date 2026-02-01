@@ -1,28 +1,28 @@
-class Dclaude < Formula
+class DclaudeAT144 < Formula
   desc "Containerized Claude Code runner with Docker isolation"
   homepage "https://github.com/jedi4ever/dclaude"
-  version "1.5.0"
+  version "1.4.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/jedi4ever/dclaude/releases/download/v1.5.0/dclaude-darwin-arm64"
-      sha256 "55662b40985665c8bba4e2ceae133772e1b01d72357022805e422e2a6a67d5d0"
+      url "https://github.com/jedi4ever/dclaude/releases/download/v1.4.4/dclaude-darwin-arm64"
+      sha256 "2140bf0b2e342d69fbd1caab231353a0cd9ce5689831b87f3e291e966e12d72d"
     end
     on_intel do
-      url "https://github.com/jedi4ever/dclaude/releases/download/v1.5.0/dclaude-darwin-amd64"
-      sha256 "d68376e05d87339f1450c1bcad73440208d97f5a4f45293551a530cc523bb170"
+      url "https://github.com/jedi4ever/dclaude/releases/download/v1.4.4/dclaude-darwin-amd64"
+      sha256 "4b2d14052e36b2b3e6a7e406853fae795122cb4e5653d29320d8f779409e33ac"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jedi4ever/dclaude/releases/download/v1.5.0/dclaude-linux-arm64"
-      sha256 "d1b9e75cb416bf464121587316457fb8c49c5d6f6a61d92da5587a202e2e7089"
+      url "https://github.com/jedi4ever/dclaude/releases/download/v1.4.4/dclaude-linux-arm64"
+      sha256 "14263783c0f23d1f0b00f3cc74911e1a029a389280e3466dbcd73b34fd0661e0"
     end
     on_intel do
-      url "https://github.com/jedi4ever/dclaude/releases/download/v1.5.0/dclaude-linux-amd64"
-      sha256 "27b7dd42eab1713e5eaaef073d395d7eadb79c45c535954d3536ea2b7c0188e0"
+      url "https://github.com/jedi4ever/dclaude/releases/download/v1.4.4/dclaude-linux-amd64"
+      sha256 "262d29a4286d78a8cc44d8b37ebc9e882414cb66cbac2e469492c28b11a64dd5"
     end
   end
 
@@ -37,7 +37,7 @@ class Dclaude < Formula
   end
 
   test do
-    assert_match "1.5.0", shell_output("#{bin}/dclaude --version 2>&1", 0)
+    assert_match "1.4.4", shell_output("#{bin}/dclaude --version 2>&1", 0)
   end
 
   def caveats
