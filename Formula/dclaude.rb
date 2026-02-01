@@ -53,6 +53,9 @@ class Dclaude < Formula
         - Run 'claude login' (uses ~/.claude config)
         - Set ANTHROPIC_API_KEY environment variable
 
+      Optional: Install gh (GitHub CLI) for enhanced GitHub integration:
+        brew install gh
+
       Documentation: https://github.com/jedi4ever/dclaude
     EOS
   end
