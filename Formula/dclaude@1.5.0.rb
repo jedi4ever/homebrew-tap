@@ -26,7 +26,6 @@ class DclaudeAT150 < Formula
     end
   end
 
-  depends_on "docker"
   depends_on "curl"
 
   def install
@@ -42,10 +41,12 @@ class DclaudeAT150 < Formula
 
   def caveats
     <<~EOS
-      dclaude requires Docker to be running.
+      dclaude requires a Docker-compatible container runtime to be running.
+      This can be Docker Desktop, Rancher Desktop, Podman, or any other
+      Docker-compatible runtime.
 
       To get started:
-        1. Ensure Docker Desktop is running
+        1. Ensure your container runtime is running
         2. Run: dclaude --version
 
       For authentication, you can either:
