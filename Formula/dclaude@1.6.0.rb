@@ -1,4 +1,4 @@
-class Dclaude < Formula
+class DclaudeAT160 < Formula
   desc "Containerized Claude Code runner with Docker isolation"
   homepage "https://github.com/jedi4ever/dclaude"
   version "1.6.0"
