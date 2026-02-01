@@ -27,6 +27,7 @@ class Dclaude < Formula
   end
 
   depends_on "docker"
+  depends_on "curl"
 
   def install
     bin.install "dclaude-darwin-arm64" => "dclaude" if OS.mac? && Hardware::CPU.arm?
