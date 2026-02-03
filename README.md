@@ -1,6 +1,6 @@
-# Homebrew Tap for dclaude
+# Homebrew Tap for addt
 
-This is a Homebrew tap for installing `dclaude` and its various versions.
+This is a Homebrew tap for installing `addt` and its various versions.
 
 ## Installation
 
@@ -15,29 +15,30 @@ brew tap jedi4ever/tap
 ### Install the latest version
 
 ```bash
-brew install jedi4ever/tap/dclaude
+brew install jedi4ever/tap/addt
 ```
 
 Or after tapping, simply:
 
 ```bash
-brew install dclaude
+brew install addt
 ```
 
 ## Installing Specific Versions
 
-To install a specific version of dclaude, use the versioned formula:
+To install a specific version of addt, use the versioned formula:
 
 ```bash
-brew install jedi4ever/tap/dclaude@1.4.4
+brew install jedi4ever/tap/addt@0.0.1
 ```
 
 ## Usage
 
-After installation, you can use dclaude from anywhere:
+After installation, you can use addt from anywhere:
 
 ```bash
-dclaude --help
+addt --help
+addt --addt-version
 ```
 
 ## Upgrading
@@ -45,7 +46,7 @@ dclaude --help
 To upgrade to the latest version:
 
 ```bash
-brew upgrade dclaude
+brew upgrade addt
 ```
 
 ## Uninstalling
@@ -53,36 +54,36 @@ brew upgrade dclaude
 To uninstall dclaude:
 
 ```bash
-brew uninstall dclaude
+brew uninstall addt
 ```
 
 To uninstall a specific version:
 
 ```bash
-brew uninstall dclaude@1.4.4
+brew uninstall addt@0.0.1
 ```
 
 ## Available Versions
 
-- `dclaude` - Latest stable version (currently 1.4.4)
-- `dclaude@1.4.4` - Version 1.4.4
+- `addt` - Latest stable version (currently 0.0.2)
+- `addt@0.0.1` - Version 0.0.1
 
 ## Troubleshooting
 
 If you encounter any issues:
 
 1. Update Homebrew: `brew update`
-2. Check formula info: `brew info dclaude`
-3. Reinstall: `brew reinstall dclaude`
+2. Check formula info: `brew info addt`
+3. Reinstall: `brew reinstall addt`
 
 ## Contributing
 
 To add a new version:
 
-1. Update `Formula/dclaude.rb` for the latest version
-2. Create versioned formulas like `Formula/dclaude@x.y.z.rb` for pinned versions
+1. Update `Formula/addt.rb` for the latest version
+2. Create versioned formulas like `Formula/addt@x.y.z.rb` for pinned versions
 3. Update SHA256 checksums for all architectures
 
 ## More Information
 
-For more about dclaude, visit: https://github.com/jedi4ever/dclaude
+For more about addt, visit: https://github.com/jedi4ever/addt
