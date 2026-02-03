@@ -1,5 +1,5 @@
 class AddtAT001 < Formula
-  desc "Containerized Claude Code runner with Docker isolation"
+  desc "AI Don't Do That - Run AI coding agents in Docker containers"
   homepage "https://github.com/jedi4ever/addt"
   version "0.0.1"
   license "MIT"
@@ -41,20 +41,25 @@ class AddtAT001 < Formula
 
   def caveats
     <<~EOS
-      addt requires a Docker-compatible container runtime to be running.
-      This can be Docker Desktop, Rancher Desktop, Podman, or any other
-      Docker-compatible runtime.
+      addt (AI Don't Do That) runs AI coding agents in Docker containers.
+      Your agent can read, write, and execute code in complete isolation.
 
-      To get started:
-        1. Ensure your container runtime is running
-        2. Run: addt --version
+      Prerequisites:
+        - Docker (or compatible runtime like Rancher Desktop, Podman)
 
-      For authentication, you can either:
-        - Run 'claude login' (uses ~/.claude config)
+      Quick start:
+        addt --addt-version         # Shows addt version
+        addt --addt-list-extensions # List available agents (claude, codex, gemini)
+
+      Use as specific agent via symlinks:
+        ln -s $(which addt) ~/bin/claude
+        ln -s $(which addt) ~/bin/codex
+
+      Authentication (choose one):
+        - Run 'claude login' locally (config auto-mounted)
         - Set ANTHROPIC_API_KEY environment variable
 
-      Optional: Install gh (GitHub CLI) for enhanced GitHub integration:
-        brew install gh
+      Optional: brew install gh (for GitHub integration)
 
       Documentation: https://github.com/jedi4ever/addt
     EOS
