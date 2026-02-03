@@ -1,28 +1,28 @@
 class Addt < Formula
   desc "AI Don't Do That - Run AI coding agents in Docker containers"
   homepage "https://github.com/jedi4ever/addt"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/jedi4ever/addt/releases/download/v0.0.3/addt-darwin-arm64"
-      sha256 "0ebcbcd280709842f6d6ab91a4d4e7ba629eaab65a0067317f3a5bba9e480ea4"
+      url "https://github.com/jedi4ever/addt/releases/download/v0.0.4/addt-darwin-arm64"
+      sha256 "4bd662862d0faf52929f0cf1a5d1cf547b16db260a4610d3de62676892c652f4"
     end
     on_intel do
-      url "https://github.com/jedi4ever/addt/releases/download/v0.0.3/addt-darwin-amd64"
-      sha256 "c71e2d8f329e7d5d679607f3637ab3a5c6e6322de0434fbcb4daba2fbe277416"
+      url "https://github.com/jedi4ever/addt/releases/download/v0.0.4/addt-darwin-amd64"
+      sha256 "b65d576fbaa892e9bca785cf1851cec0bb45fdcfd51a3a2594cdfc957006ad84"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/jedi4ever/addt/releases/download/v0.0.3/addt-linux-arm64"
-      sha256 "fc888f848fa87e9abeb1abb62e626734a6f2b76a81a6da4202333fe262d92ab1"
+      url "https://github.com/jedi4ever/addt/releases/download/v0.0.4/addt-linux-arm64"
+      sha256 "694d128f21666b22db8dc98a21b86dc551ae6b2465e277977b222c5d3a125807"
     end
     on_intel do
-      url "https://github.com/jedi4ever/addt/releases/download/v0.0.3/addt-linux-amd64"
-      sha256 "ab3d530a10654188df3d45a13ac4cc19a167a3630e9c13cf4b3ca70a87ea1fc2"
+      url "https://github.com/jedi4ever/addt/releases/download/v0.0.4/addt-linux-amd64"
+      sha256 "5ec2dbee85109a41e1b8df8fc525df0895c9e5ca49432a05283fa2fa316991e7"
     end
   end
 
@@ -36,7 +36,7 @@ class Addt < Formula
   end
 
   test do
-    assert_match "0.0.3", shell_output("#{bin}/addt --version 2>&1", 0)
+    assert_match "0.0.4", shell_output("#{bin}/addt --version 2>&1", 0)
   end
 
   def caveats
