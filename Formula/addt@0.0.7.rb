@@ -1,4 +1,4 @@
-class Addt < Formula
+class AddtAT007 < Formula
   desc "Run AI coding agents safely in Docker containers"
   homepage "https://github.com/jedi4ever/addt"
   version "0.0.7"
@@ -37,36 +37,5 @@ class Addt < Formula
 
   test do
     assert_match "0.0.7", shell_output("#{bin}/addt --version 2>&1", 0)
-  end
-
-  def caveats
-    <<~EOS
-      addt (AI Don't Do That) runs AI coding agents safely in Docker containers.
-      Your code stays isolated - no surprises on your host machine.
-
-      Prerequisites:
-        - Docker (or compatible runtime like Rancher Desktop, Podman)
-
-      Quick start:
-        addt run claude "Fix the bug in app.js"
-        addt run codex "Add unit tests"
-        addt run gemini "Review this PR"
-        addt version               # Shows addt version
-        addt extensions list       # List available agents
-
-      Available agents: claude, codex, gemini, copilot, amp, cursor, kiro, and more.
-
-      Authentication:
-        - Set ANTHROPIC_API_KEY for Claude (or run 'claude login' locally)
-        - Set OPENAI_API_KEY for Codex
-        - Set GEMINI_API_KEY for Gemini
-        - Set GH_TOKEN for GitHub operations
-
-      Aliases (add to ~/.bashrc or ~/.zshrc):
-        alias claude='addt run claude'
-        alias codex='addt run codex'
-
-      Documentation: https://github.com/jedi4ever/addt
-    EOS
   end
 end
